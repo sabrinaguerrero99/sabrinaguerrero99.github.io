@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  margin: 20;
+  padding: 40;
+  height: 100vh;
+  background: #A68C7C;
+}
+  .title-center {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.menu-table, .menu-table td {
+    border: none;
+    margin-left: 140px;
+    margin-right: 100px;
+}
+
+.menu-table1, .menu-table1 td {
+  border: none;
+  margin-left: 400px;
+  margin-right: 100px;
+}
+
+.menu {
+  background-color: #333; /* Color de fondo del menú */
+  padding: 20px 0; /* Espaciado interno superior e inferior */
+}
+
+.menu ul {
+  list-style-type: none; /* Quita los puntos de la lista */
+  margin: 0;
+  padding: 0;
+  text-align: right; /* Centra los elementos de la lista */
+}
+
+.menu ul li {
+  display: inline-block; /* Muestra los elementos en línea */
+  margin-right: 20px; /* Margen derecho entre elementos */
+}
+
+.menu ul li a {
+  color: #EFF2EB; /* Color del texto de los enlaces */
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  padding: 10px 20px; /* Espaciado interno de los enlaces */
+  display: block; /* Convierte los enlaces en bloques para el relleno */
+}
+
+.menu ul li a:hover {
+  background-color: #555; /* Color de fondo al pasar el ratón */
+}
+
+.contenido {
+  padding: 20px;
+}
+.image-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-item {
+  margin-bottom: 20px; /* Espacio entre las imágenes */
+  text-align: center; /* Centra el texto debajo de las imágenes */
+}
+
+.image-item img {
+  width: 400px; /* Ajusta el ancho de las imágenes según sea necesario */
+  height: auto; /* Mantiene la proporción de las imágenes */
+}
