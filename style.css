@@ -436,11 +436,21 @@ article.card {
     width: 375px;
     margin-top: 25px;
     box-shadow: 1px 0px 5px  #212121;
-    text-align: center;
-    image-orientation: center;
+    text-align: left;
+    image-orientation: left;
+    /* text-align: center;
+    image-orientation: center; */
     }
 
     #nosotros p {
+        line-height: 1.6; 
+    }
+
+    #ubicacion p {
+        line-height: 1.6; 
+    }
+
+    #cafe p {
         line-height: 1.6; 
     }
 
