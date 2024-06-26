@@ -456,3 +456,19 @@ article.card {
 
     }
 
+    .ppal {
+        font-family: 'KoHo';
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+        background-color: #fff3ec;
+        /* Color de fondo del botón */
+        color: black;
+        text-decoration: none;
+        padding: 15px 30px;
+        /* Ajusta el relleno del botón según sea necesario */
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+
