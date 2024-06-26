@@ -284,7 +284,7 @@ footer img.footer-ship {
 footer .socialnetwork {
     position: relative;
     display: flex;
-    width: 100%;
+    width: 60%;
     padding: 2rem 2rem;
     justify-content: space-between;
 }
@@ -447,10 +447,12 @@ article.card {
     }
 
     #ubicacion p {
-        line-height: 1.6; 
+        line-height: 1.6;
+
     }
 
     #cafe p {
-        line-height: 1.6; 
+        line-height: 1.6;
+
     }
 
