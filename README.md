@@ -3,8 +3,7 @@
 ## Burger King 
 
 Burger King Corporation, también conocida como BK, es una cadena de restaurantes de comida rápida estadounidense especializada 
-en la elaboración de hamburguesas con sede central en Miami, Florida, y subsidiaria de Restaurant Brands International, un holding 
-canadiense con sede en Toronto al que también pertenece Popeyes.
+en la elaboración de hamburguesas con sede central en Miami, Florida, y subsidiaria de Restaurant Brands International, un holding canadiense con sede en Toronto al que también pertenece Popeyes.
 
 ## ¿Cuál es el objetivo de la pagina?
 
