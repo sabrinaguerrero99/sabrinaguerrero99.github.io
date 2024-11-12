@@ -10,9 +10,13 @@ canadiense con sede en Toronto al que también pertenece Popeyes.
 
 Esta página está construida para la cátedra de Desarrollo I del Instituto ORT, para la entrega final del 1er cuatrimestre de la carrera de Diseño Gráfico Digital.
 
+
+
 ## ¿Quiénes participan?
 
 * Sabrina Guerrero
 
-para mas informacion:
+
+
+###para mas informacion:
 https://es.wikipedia.org/wiki/Burger_King

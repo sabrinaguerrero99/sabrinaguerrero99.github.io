@@ -115,7 +115,7 @@ text-decoration: none;
 }
 
 .logo img {
-width: 60px;
+width:60px;
 }
 
 .logo {
@@ -127,7 +127,6 @@ max-width: 1200px;
 margin: 0 auto;
 padding: 20px;
 text-align: center;
-/* height: 100%; */
 }
 
 .product-info {
@@ -157,7 +156,7 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .services img {
-width: 100px;
+width: 150px;
 height: auto;
 }
 
@@ -170,13 +169,6 @@ text-decoration: none;
 color: #000000;
 font-weight: 700;
 border-radius: 30px; 
-}
-
-
-figcaption {
-font-size: 1.2em;
-margin-top: 10px;
-color: #3e2723;
 }
 
 .nav a {
@@ -206,11 +198,6 @@ color: #fff;
 transform: scale(1.1);
 }
 
-.hero-image img {
-width: 100%;
-max-width: 400px;
-}
-
 .menu {
 padding: 40px;
 text-align: center;
@@ -231,32 +218,58 @@ padding: 40px 20px;
 .menu-item {
 width: calc(33.33% - 20px); 
 text-align: center;
-/* margin: 10px 0; */
 margin: 0;
 }
 
-.menu-item img {
-max-width: 100%;
-height: auto;
+.menu-item a {
+text-decoration: none;
+color: inherit;
 }
 
-.menu-item h3,
-.menu-item p {
-color: #000000;
+.location {
+width: 80%;
+max-width: 1200px;
+margin: 20px auto;
+text-align: center;
 }
 
-.subscribe input {
-display: block;
-width: 100%;
+.location h2,
+.location p {
+margin-bottom: 20px;
+}
+
+.location-content {
+display: flex;
+gap: 20px;
+justify-content: space-between;
+align-items: flex-start;
+flex-wrap: wrap;
+}
+
+.location iframe {
+flex: 1;
+max-width: 600px;
+height: 350px;
+border: 0;
+border-radius: 8px;
+}
+
+.location-details {
+flex: 1;
+max-width: 600px;
+padding: 10px;
+border-radius: 8px;
+color: black;
+text-align: center;
+}
+
+.location-details h3,
+.location-details p,
+.location-details button {
 margin-bottom: 10px;
 }
 
-.subscribe button {
-display: block;
-width: 100%; 
-}
-
-.subscribe button {
+.location-details button {
 display: block;
 width: 50%; 
 margin: 0 auto;
@@ -270,22 +283,19 @@ cursor: pointer;
 text-align: center;
 }
 
+.location-details button a {
+color: white;
+text-decoration: none;
+}
+
+.subscribe button {
+display: block;
+width: 100%; 
+}
+
 .subscribe button a {
 color: #ffffff;
 text-decoration: none
-}
-
-.location-subscribe {
-display: flex;
-justify-content: space-between;
-width: 100%;
-margin-bottom: 20px;
-}
-
-.location, .subscribe {
-flex: 1;
-text-align: center;
-margin: 0 20px;
 }
 
 .video {
@@ -293,20 +303,11 @@ display: flex;
 justify-content: center;
 align-items: center;
 text-align: center;
-margin: 10px 0;
+margin: 30px 0;
 }
 
 .video iframe {
 max-width: 100%;
-}
-
-.menu-item a {
-text-decoration: none;
-color: inherit;
-}
-
-a {
-text-decoration: none;
 }
 
 .combos-section {
@@ -330,7 +331,7 @@ margin: 0;
 }
     
 .combo img {
-width: 100px;
+width: 150px;
 height: auto;
 margin-right: 10px;
 }
