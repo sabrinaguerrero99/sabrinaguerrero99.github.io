@@ -306,6 +306,23 @@ display: block;
 width: 100%;
 }
 
+.contact-form h2 {
+text-align: left;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+display: block;
+text-align: left;
+width: 100%; /* Esto asegura que los inputs ocupen todo el ancho disponible */
+margin-bottom: 10px; /* Espacio entre cada elemento */
+}
+
+.contact-form textarea {
+resize: none; /* Esto hace que el textarea no sea redimensionable */
+}
+
 button {
 width: 150px;
 height: 45px;
@@ -429,3 +446,5 @@ position: relative;
 bottom: 0;
 margin: 0;
 }
+
+
