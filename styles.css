@@ -1,7 +1,7 @@
 * {
 box-sizing: border-box;
 margin: 0;
-padding: 0; 
+padding: 0;
 }
 
 body {
@@ -254,48 +254,78 @@ border: 0;
 border-radius: 8px;
 }
 
-.location-details {
-flex: 1;
-max-width: 600px;
-padding: 10px;
-border-radius: 8px;
-color: black;
-text-align: center;
-}
-
-.location-details h3,
-.location-details p,
-.location-details button {
-margin-bottom: 10px;
-}
-
-.location-details button {
+label {
 display: block;
-width: 50%; 
-margin: 0 auto;
-background-color: #ff0000;
-color: #ffffff;
+margin-top: 20px;
+}
+
+input,textarea {
+color: rgb( 46, 46, 46);
+padding: 20px;
+background-color: rgb(247, 247, 247);
+transition: .5s ease-in-out;
+}
+
+input:focus,textarea:focus {
+background-color: #F28705;
+color: rgb(235, 234, 234);
+transition: .3s ease-in-out;
+}
+
+input::placeholder,textarea::placeholder {
+color: rgb(148, 148, 148);
+}
+
+#apellido,
+#nombre,
+#email,
+#mensaje {
+padding: 7px 5px;
+margin: 7px 0;
+border-radius: 7px;
+border: 1px solid silver;
+}
+
+#apellido {
+display: block;
+width: 100%;
+}
+
+#nombre {
+display: block;
+width: 100%;
+}
+
+#email {
+display: block;
+width: 100%;
+}
+
+#mensaje {
+display: block;
+width: 100%;
+}
+
+button {
+width: 150px;
+height: 45px;
+line-height: 30px;
 border: none;
-border-radius: 30px;
-padding: 10px 30px;
-font-weight: bold;
+border-radius: 25px;
+text-transform: capitalize;
 cursor: pointer;
-text-align: center;
+background-color: #FCBA1D;
+color: black;
 }
 
-.location-details button a {
-color: white;
-text-decoration: none;
+.borrar {
+margin-left: 90px;
+background-color: #ff0000;
+color: black;
 }
 
-.subscribe button {
-display: block;
-width: 100%; 
-}
-
-.subscribe button a {
-color: #ffffff;
-text-decoration: none
+.borrar:hover {
+background-color: rgb(51, 6, 15);
 }
 
 .video {
@@ -303,7 +333,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 text-align: center;
-margin: 30px 0;
+margin: 40px 0;
 }
 
 .video iframe {
@@ -399,4 +429,6 @@ position: relative;
 bottom: 0;
 margin: 0;
 }
+
+
 
