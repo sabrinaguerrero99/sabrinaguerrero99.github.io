@@ -37,16 +37,29 @@
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
 
-            <!-- Información de contacto en la segunda columna -->
-            <div class="location-details">
-                <h2>Buenos Aires</h2>
-                <p>Avenida Cabildo 1426</p>
-                <p>Buenos Aires Ciudad </p> 
-                <p>Autónoma de Buenos Aires</p>
+            <!-- Formulario de contacto en la segunda columna -->
+            <div class="contact-form">
                 <h2>Contáctanos</h2>
-                <button>
-                    <a href="mailto:contacto@burgerking.com?subject=Solicitud de información&body=Hola,%20les%20estoy%20escribiendo%20para%20consultar%20más%20información%20sobre:%0A%0A%0A%20Gracias">Enviar correo</a>
-                </button>
+                <form action="submit_form.php" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="Ingresar Nombres" required>
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="Ingresar Apellido" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="Ingresar Nombre con @" required>
+
+                    <label for="mensaje">Consultas / Mensaje:</label>
+                    <textarea id="mensaje" cols="30" rows="10" placeholder="Ingresar consultas">
+
+                    </textarea>
+                    
+                    <div class="botones">
+                        <button type="submit" title="enviar consulta">Enviar</button>
+                        <button type="reset" class="borrar">resetear</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
