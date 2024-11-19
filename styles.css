@@ -1,4 +1,3 @@
-
 * {
 box-sizing: border-box;
 margin: 0;
@@ -88,10 +87,6 @@ margin: auto;
 
 .header .nav-links li a:hover{
 color: #FC7D1C;
-}
-    
-.header .nav-links li:hover{
-transform: scale(1.1);
 }
 
 header h1 {
@@ -210,16 +205,16 @@ margin-bottom: 20px;
 
 .menu-items {
 display: flex;
-justify-content: center;
-flex-wrap: wrap; 
-gap: 20px;  
-padding: 40px 20px;
+flex-wrap: wrap;
+gap: 15px;
+justify-content: space-between;
+padding: 20px;
 }
 
 .menu-item {
-width: calc(33.33% - 20px); 
-text-align: center;
-margin: 0;
+flex: 1 1 calc(33.33% - 30px); /* Tres columnas: 33.33% menos el gap */
+max-width: calc(33.33% - 30px); /* Limita el ancho máximo */
+box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho */
 }
 
 .menu-item a {
@@ -250,8 +245,8 @@ flex-wrap: wrap;
 
 .location iframe, 
 .contact-form {
-    flex: 1; /* Ocupa el mismo espacio para ambos elementos */
-    max-width: 600px; /* Controla el ancho máximo */
+flex: 1; /* Ocupa el mismo espacio para ambos elementos */
+max-width: 600px; /* Controla el ancho máximo */
 }
 
 .location iframe {
@@ -365,6 +360,60 @@ margin: 40px 0;
 max-width: 100%;
 }
 
+/* Estilo para las cards */
+.card {
+background: #fff;
+border-radius: 8px;
+overflow: hidden;
+padding: 15px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+width: 200px; /* Cambia este valor según el tamaño deseado */
+margin: 10px; /* Espacio entre las cards */
+}
+
+.card img {
+width: 50%;
+border-radius: 8px;
+margin-bottom: 10px;
+}
+
+.card-title {
+font-size: 1rem;
+font-weight: bold;
+margin-bottom: 10px;
+color: #333;
+}
+
+.card-description {
+font-size: 0.8rem;
+color: #555;
+margin-bottom: 10px;
+}
+
+.card-price {
+font-size: 0.9rem;
+font-weight: bold;
+color: #FC7D1C;
+margin-bottom: 15px;
+}
+
+.combo-btn {
+background-color: #FC7D1C;
+color: #fff;
+padding: 6px 10px;
+text-decoration: none;
+border-radius: 5px;
+font-weight: bold;
+transition: background-color 0.3s ease;
+}
+
+.combo-btn:hover {
+background-color: #d9651c;
+}
+
 .combos-section {
 display: flex;
 margin: 0;
@@ -396,7 +445,19 @@ font-size: 1.5em;
 margin-bottom: 10px;
 text-align: left;
 }
-    
+
+.combo-familiar {
+background-color: #FE1E1E;
+}
+
+.combo-pareja {
+background-color: #FCBA1D;
+}
+
+.combo-personalizado {
+background-color: #FC7D1C;
+}
+  
 .combo-btn {
 padding: 8px 16px;
 background-color: #fff;
@@ -417,7 +478,7 @@ background-color: #ddd;
 
 .social-icons {
 display: flex;
-justify-content: center;
+justify-content: right;
 gap: 20px;
 width: 100%; 
 margin: 0;
@@ -427,16 +488,7 @@ padding: 0;
 .social-icons a {
 color: white;
 font-size: 30px;
-text-decoration: none;
-transition: transform 0.3s ease; 
-}
-
-.social-icons a:hover {
-transform: scale(1.2);
-}
-
-.social-icons i {
-transition: color 0.3s ease;
+text-decoration: none; 
 }
 
 .social-icons a:hover i {
@@ -453,4 +505,23 @@ box-sizing: border-box;
 position: relative;
 bottom: 0;
 margin: 0;
+}
+
+.footer-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+.copyright {
+font-size: 1rem;
+}
+
+.social-icons a {
+color: white;
+font-size: 30px;
+text-decoration: none;
 }
