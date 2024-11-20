@@ -401,17 +401,23 @@ margin-bottom: 15px;
 }
 
 .combo-btn {
-background-color: #FC7D1C;
-color: #fff;
-padding: 6px 10px;
-text-decoration: none;
-border-radius: 5px;
+display: inline-block;
+padding: 10px 20px;
+font-size: 16px;
 font-weight: bold;
-transition: background-color 0.3s ease;
+text-align: center;
+text-decoration: none;
+color: #603813; /* Marrón oscuro */
+border: 2px solid #603813; /* Borde marrón oscuro */
+border-radius: 5px; /* Bordes redondeados */
+background-color: #ffffff; /* Fondo blanco */
+box-shadow: 3px 3px 8px rgba(96, 56, 19, 0.5); /* Sombra marrón claro */
+transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .combo-btn:hover {
-background-color: #d9651c;
+background-color: #603813; /* Marrón oscuro al pasar el mouse */
+color: black; 
 }
 
 .combos-section {
