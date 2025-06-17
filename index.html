@@ -2,32 +2,348 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Guerrero_Sabrina_BurgerKing</title>
-    <link rel="stylesheet" href="normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="64x64" href="Logo_Aruma.svg" type="image/png">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi Proyecto de Skincare</title>
+    <!-- Enlace a Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Enlace a Google Fonts para la tipografía Bricolage -->
+    <link href="https://fonts.google.com/specimen/Bricolage+Grotesque" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Enlace a la hoja de estilos CSS personalizada -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 </head>
-    <body class="home-page">
-    <header class="header"> 
-        <nav>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="logo_burgerKing.svg" alt="Burger King Logo">
-                </a>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container d-flex align-items-center">
+            <img src="Logo_Aruma.svg" alt="Isotipo" class="logo logo-isotipo">
+            <a class="navbar-brand" href="index.html">Aruma</a>
+
+
+            <!-- Botón hamburguesa alineado a la derecha -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú principal -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="active nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <!-- Icono de carrito de compras -->
+                        <li class="cart">
+                            <a href="#carrito">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span id="cart-count">0</span> <!-- Cantidad de productos -->
+                            </a>
+                        </li>
+                </ul>
             </div>
-            <ul class="nav-links">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <section class="product-info">
-            <h1>Whopper con Queso</h1>
-            <p>La clásica Whopper pero con queso cheddar.</p>
-            <a href="productos.html" class="cta-button">Ver Productos</a>
-        </section>
+        </div>
+    </nav>
+
+
+   <!-- Sección de cabecera -->
+    <header>
+        <div class="container">
+           <div class="mt-5 pt-4">
+                <div class="row align-items-center g-4">
+                    <!-- Texto primero -->
+                    <div class="col-12 col-lg-6">
+                        <h1 class="header-title">Del laboratorio a tu piel, sin escalas</h1>
+                        <p class="intro">Descubrí el universo del skincare coreano con Aruma. 
+                            Seleccionamos fórmulas innovadoras y efectivas directamente de las marcas 
+                            más reconocidas de Corea del Sur. Desde sérums intensivos hasta cremas calmantes, 
+                            cada producto está pensado para transformar tu rutina y realzar tu belleza natural. 
+                            Recibí lo mejor del K-Beauty en la puerta de tu casa, sin complicaciones.
+                        </p>
+                        <a href="productos.html" class="btn btn-white btn-lg">Ver Productos</a>
+                    </div>
+
+                    <!-- Imagen -->
+                    <div class="col-12 col-lg-6 text-center">
+                        <img src="img/modelo_skincare1.jpg" alt="Modelo" class="img-fluid">
+                    </div>
+                </div>
+            </div>   
+        </div>
     </header>
+
+
+    <!-- Sección de Productos Destacados -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col">
+                    <h2>Productos Destacados</h2>
+                    <p class="lead">
+                        Nuestros tratamientos más exclusivos te esperan en Aruma. Explorá lo mejor de nuestra línea de cuidado facial 
+                        con fórmulas premium que destacan por su pureza y eficacia. Estos productos, seleccionados por expertos en cosmética
+                        coreana, están pensados para las pieles más exigentes. Disfrutá de una experiencia de belleza consciente y transformadora.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Carrusel de Productos -->
+            <div id="carouselProductos" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center gap-4 flex-wrap">
+                            <!-- CARD 1 -->
+                            <div class="card">
+                                <img src="img/producto_04.JPG" class="card-img-top" alt="Noni Ampoule" width="300" height="300" style="object-fit: cover;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Noni Ampoule</h5>
+                                    <a href="productos.html" class="btn btn-primary">Ver más</a>
+                                </div>
+                            </div>
+
+                            <!-- CARD 2 -->
+                            <div class="card">
+                                <img src="img/producto_01.jpg" class="card-img-top" alt="Centella" width="300" height="300" style="object-fit: cover;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">SKIN 1004</h5>
+                                    <a href="productos.html" class="btn btn-primary">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center gap-4 flex-wrap">
+                            <!-- CARD 3 -->
+                            <div class="card">
+                                <img src="img/producto_05.JPG" class="card-img-top" alt="Torriden" width="300" height="300" style="object-fit: cover;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Torriden</h5>
+                                    <a href="productos.html" class="btn btn-primary">Ver más</a>
+                                </div>
+                            </div>
+
+                            <!-- CARD 4 -->
+                            <div class="card">
+                                <img src="img/producto_07.JPG" class="card-img-top" alt="Purito" width="300" height="300" style="object-fit: cover;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Purito</h5>
+                                    <a href="productos.html" class="btn btn-primary">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Controles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Sección de Historia -->
+    <section class="py-5">
+    <div class="container">
+        <div class="row align-items-center g-4">
+        <!-- Imagen a la izquierda -->
+        <div class="col-12 col-lg-6 text-center">
+            <img src="img/Historia.jpg" alt="Historia" class="img-fluid rounded">
+        </div>
+
+        <!-- Texto a la derecha -->
+        <div class="col-12 col-lg-6">
+            <h2 class="titulo-historia text-start">Historia</h2>
+            <p class="lead text-start">
+            Nacida del compromiso con la piel y la inspiración en la sabiduría ancestral coreana, 
+            Aruma fue creada para ofrecer rituales de belleza que conecten el bienestar interior con el cuidado exterior. 
+            Desde sus comienzos, la marca se ha enfocado en seleccionar ingredientes naturales, fórmulas limpias y procesos 
+            innovadores que respetan tanto la piel como el medio ambiente. Con una visión que une tradición y ciencia, Aruma
+            construyó una línea de productos pensada para cada tipo de piel, priorizando la hidratación, la calma y la luminosidad. 
+            Hoy, Aruma es sinónimo de pureza, efectividad y un enfoque consciente hacia la belleza cotidiana.
+            </p>
+            <div class="button text-start">
+            <a href="nosotros.html" class="btn btn-lg btn-white">Conocer más</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+
+
+    <!-- Sección de Recomendaciones -->
+    <section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="recomendaciones-titulo text-center">Recomendaciones</h2>
+        <p class="lead">
+        En Aruma, te ofrecemos lo mejor del skincare coreano para realzar tu rutina de cuidado personal.
+        Desde sérums hidratantes con ácido hialurónico hasta protectores solares de rápida absorción, nuestros productos 
+        están formulados para brindar una piel luminosa, saludable y equilibrada.
+        </p>
+
+        <div class="row container">
+
+        <div class="col-lg-4 col-md-12 py-3 d-flex justify-content-center">
+            <div class="card" style="width: 15rem;">
+            <img src="img/producto_serum.jpg" class="card-img-top img-fluid" alt="cuidado facial" style="height: auto; max-height: 220px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">mixsoon - Sérum Facial con Ácido Hialurónico</h5>
+                <p class="card-text">Enriquecido con agua glacial y tres tipos de ácido hialurónico, este sérum ofrece una hidratación potente para una piel flexible y tersa...</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 py-3 d-flex justify-content-center">
+            <div class="card" style="width: 15rem;">
+            <img src="img/producto_protector.jpg" class="card-img-top img-fluid" alt="protector solar" style="height: auto; max-height: 220px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">SKIN 1004 - Protector Solar con Sérum Madagascar Centella</h5>
+                <p class="card-text">Equipado con SPF50+ PA++++, este protector solar orgánico está elaborado con una proporción áurea de ácido hialurónico...</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 py-3 d-flex justify-content-center">
+            <div class="card" style="width: 15rem;">
+            <img src="img/producto_crema.jpg" class="card-img-top img-fluid" alt="crema hidratante" style="height: auto; max-height: 220px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">Anua - Heartleaf 70 Intense Calming Cream</h5>
+                <p class="card-text">Calme la piel sensible e irritada con esta crema calmante enriquecida con un 70 % de extracto de corazón...</p>
+            </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+
+    <!-- Sección de Galería -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center">Galería</h2>
+
+            <div class="row g-3 py-4">
+                <!-- Fila 1 -->
+                <div class="col-12 col-md-3">
+                    <img src="img/limpieza.jpg" alt="espuma" class="img-fluid rounded gallery-img">
+                </div>
+                <div class="col-12 col-md-3">
+                    <img src="img/textura.jpg" alt="textura skincare" class="img-fluid rounded gallery-img">
+                </div>
+                <div class="col-12 col-md-3">
+                    <img src="img/gotero.jpg" alt="gotero" class="img-fluid rounded gallery-img">
+                </div>
+                <div class="col-12 col-md-3">
+                    <img src="img/cream_jars.jpeg" alt="crema" class="img-fluid rounded gallery-img">
+                </div>
+
+                <!-- Fila 2 -->
+                <div class="col-12 col-md-3">
+                    <img src="img/modelo_coreana.jpg" alt="coreana" class="img-fluid rounded gallery-img">
+                </div>
+                <div class="col-12 col-md-3">
+                    <img src="img/serum.jpg" alt="serum facial" class="img-fluid rounded gallery-img">
+                </div>
+                <div class="col-12 col-md-3">
+                    <img src="img/skincare-close_up.jpg" alt="chica" class="img-fluid rounded gallery-img">
+                </div>
+                <div class="col-12 col-md-3">
+                    <img src="img/solar.jpg" alt="Sol" class="img-fluid rounded gallery-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- Sección de Sponsors -->
+        <section>
+            <div class="container">
+                <h2 class="text-center">Sponsors</h2>
+
+                <div class="row py-4 justify-content-center">
+                    <div class="col-12 col-lg-6">
+                        <div id="carouselIndicador" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselIndicador" data-bs-slide-to="0"
+                                    class="active"></button>
+                                <button type="button" data-bs-target="#carouselIndicador"
+                                    data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#carouselIndicador"
+                                    data-bs-slide-to="2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/logo_centella.jpg" class="d-block w-100" alt="logo centella">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/logo_anua.jpg" class="d-block w-100" alt="logo anua">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/logo_purito.jpg" class="d-block w-100" alt="logo purito">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicador"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicador"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer mt-auto py-3">
+            <div class="container text-center">
+                <span class="text-light">© 2025 Aruma. Todos los derechos reservados.</span>
+                <div class="mt-2">
+                    <a href="https://www.instagram.com/yesstyle" class="text-light me-3" target="blank"
+                        title="Instagram">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                    <a href="https://www.facebook.com/YesStyle/" class="text-light me-3" target="blank" title="Facebook">
+                        <i class="fab fa-facebook fa-lg"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@yesstyle" class="text-light" target="blank"
+                        title="tiktok">
+                        <i class="fab fa-tiktok fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+
+    <!-- Enlace a Bootstrap JS (Opcional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

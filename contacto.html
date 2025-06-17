@@ -2,97 +2,118 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Contacto - Burger King</title>
-    <link rel="stylesheet" href="normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="64x64" href="Logo_Aruma.svg" type="image/png">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi Proyecto de Skincare</title>
+    <!-- Enlace a Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Enlace a Google Fonts para la tipografía Bricolage -->
+    <link href="https://fonts.google.com/specimen/Bricolage+Grotesque" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Enlace a la hoja de estilos CSS personalizada -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
+
+
 <body>
-    <header class="header">
-        <nav>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="logo_burgerKing.svg" alt="Burger King Logo">
-                </a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container d-flex align-items-center">
+            <img src="Logo_Aruma.svg" alt="Isotipo" class="logo logo-isotipo">
+            <a class="navbar-brand" href="index.html">Aruma</a>
+
+            <!-- Botón hamburguesa alineado a la derecha -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú principal -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="active nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <!-- Icono de carrito de compras -->
+                    <li class="cart">
+                        <a href="#carrito">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="cart-count">0</span> <!-- Cantidad de productos -->
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <ul class="nav-links">
-                 <li><a href="index.html">Inicio</a></li>
-                 <li><a href="servicios.html">Servicios</a></li>
-                 <li><a href="productos.html">Productos</a></li>
-                 <li><a href="contacto.html">Contacto</a></li>
-             </ul>
-         </nav>
-     </header>
+        </div>
+    </nav>
 
 
-     <section class="location">
-        <h1>Nuestra Ubicación</h1>
-        <p>Visítanos en nuestras tiendas de Buenos Aires y otras localidades.</p>
+        <!-- Sección de Contacto -->
+    <div class="container py-5">
+        <h1 class="text-center contacto">Contacto</h1>
+        <p class="text-center">En Aruma, tu piel es nuestra prioridad. Si tenés dudas sobre nuestros productos de skincare coreano, 
+            necesitás asesoramiento personalizado o querés hacer un pedido, no dudes en escribirnos. Completá el formulario a continuación 
+            y nos pondremos en contacto lo antes posible. ¡Queremos acompañarte en cada paso de tu rutina de belleza y brindarte una experiencia
+            luminosa y auténtica!
+        </p>
+    
 
-        <div class="location-content">
-            <!-- Mapa en la primera columna -->
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3282.9331543706757!2d-58.4532317!3d-34.566183!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5f6eeb206c3%3A0x7f302ab54d4a92d2!2sBurger%20King%2C%20Av.%20Cabildo%201426%2C%20C1426AAS%20CABA%2C%20Argentina!5e0!3m2!1ses-419!2sar!4v1698502671819!5m2!1ses-419!2sar"
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-
-            <!-- Formulario de contacto en la segunda columna -->
-            <div class="contact-form">
-                <h2>Contáctanos</h2>
-                <form action="submit_form.php" method="POST">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="Ingresar Nombres" required>
-
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="Ingresar Apellido" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="Ingresar Nombre con @" required>
-
-                    <label for="mensaje">Consultas / Mensaje:</label>
-                    <textarea id="mensaje" cols="30" rows="10" placeholder="Ingresar consultas">
-
-                    </textarea>
-                    
-                    <div>
-                        <button type="submit" title="enviar consulta">Enviar</button>
-                        <button type="reset" class="borrar">Reiniciar</button>
+        <div class="row py-5">
+            <div class="col-md-6 text-center">
+                <img src="img/contacto.jpg" alt="parra" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
                     </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
         </div>
-    </section>
+    </div>
 
- <!-- video BK -->
-    <section class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/3fnAH3PnQtw" 
-            title="Video de Burger King" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-        </iframe>
-    </section>
-
-    <footer>
-        <div class="footer-content">
-            <div class="copyright">
-                &copy; 2024 Burger King. Todos los derechos reservados.
-            </div>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/burgerkingarg/" target="_blank">
-                    <i class="fab fa-instagram"></i>
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3">
+        <div class="container text-center">
+            <span class="text-light">© 2025 Aruma. Todos los derechos reservados.</span>
+            <div class="mt-2">
+                <a href="https://www.instagram.com/yesstyle" class="text-light me-3" target="blank"
+                    title="Instagram">
+                    <i class="fab fa-instagram fa-lg"></i>
                 </a>
-                <a href="https://www.facebook.com/BurgerKingArgentina" target="_blank">
-                    <i class="fab fa-facebook-f"></i>
+                <a href="https://www.facebook.com/YesStyle/" class="text-light me-3" target="blank" title="Facebook">
+                    <i class="fab fa-facebook fa-lg"></i>
                 </a>
-                <a href="https://x.com/BurgerKingArg" target="_blank">
-                    <i class="fab fa-twitter"></i>
+                <a href="https://www.tiktok.com/@yesstyle" class="text-light" target="blank"
+                    title="tiktok">
+                    <i class="fab fa-tiktok fa-lg"></i>
                 </a>
             </div>
         </div>
-    </footer>    
+    </footer>
+
+
+    <!-- Enlace a Bootstrap JS (Opcional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
