@@ -7,7 +7,7 @@ const productos = [{
     },
     {
         id: 2,
-        nombre: "AXIS - Y - Sérum Corrector para Manchas",
+        nombre: "AXIS - Y - Sérum para Manchas",
         descripcion: "Sérum con una formulación libre de crueldad y apto para veganos, sin colorantes artificiales, aceites minerales, fragancias ni parabenos, que refresca y nutre la piel con extractos de caléndula, papaya y espino amarillo, mientras ofrece efectos iluminadores con extracto de salvado de arroz.",
         precio: 1400,
         imagen: "img/producto_02.jpg"
@@ -28,7 +28,7 @@ const productos = [{
     },
     {
         id: 5,
-        nombre: "Torriden - Sérum de Ácido Hialurónico",
+        nombre: "Torriden - Sérum Hialurónico",
         descripcion: "Sérum ligero y potente, repleto de ácido hialurónico de 5D-Complex que se absorbe rápidamente para hidratar instantáneamente la piel. Ingredientes adicionales como pantenol, alantoína y madecassoside calman eficazmente la piel. El color azul pastel del sérum se deriva naturalmente del extracto de malaquita que fortifica la barrera cutánea.",
         precio: 1200,
         imagen: "img/producto_05.JPG"
@@ -70,7 +70,7 @@ const productos = [{
     },
     {
         id: 11,
-        nombre: "TOCOBO - Protector Solar Algodón Suave",
+        nombre: "TOCOBO - Protector Solar",
         descripcion: "Este protector solar híbrido de minerales y químicos en barra ofrece SPF 50+ PA++++ con protección UV. Hidrata la piel con ingredientes naturales como extracto de flor onagra vespertina y aceite de semilla de jojoba. El Protector Solar en Barra calma y controla el exceso de sebo en la piel.",
         precio: 3500,
         imagen: "img/producto_11.JPG"
