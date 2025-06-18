@@ -103,6 +103,7 @@ function cargarProductos() {
   });
 }
 
+
 function actualizarCarrito() {
   $('#carrito-lista').empty();
   let total = 0;
@@ -122,6 +123,8 @@ function actualizarCarrito() {
   });
 
   $('#total').text(total);
+
+  $('#carrito-contador').text(carrito.reduce((sum, item) => sum + item.cantidad, 0));
 }
 
 $(document).on('click', '.agregar-carrito', function() {
@@ -158,14 +161,18 @@ $(document).on('click', '.eliminar', function() {
   actualizarCarrito();
 });
 
-$('#enviar-whatsapp').click(function() {
-  let mensaje = "Hola, quiero hacer un pedido:%0A";
+$('#enviar-whatsapp').click(function () {
+  let mensaje = "Hola, quiero hacer un pedido en Aruma. Estos son los productos seleccionados:%0A";
   carrito.forEach(item => {
     mensaje += `- ${item.nombre} x ${item.cantidad} = $${item.precio * item.cantidad}%0A`;
   });
-  mensaje += `%0ATotal: $${$('#total').text()}`;
-  const telefono = "549XXXXXXXXXX"; // reemplaza por tu número real
-  window.open(`https://wa.me/${telefono}?text=${mensaje}`, '_blank');
+  mensaje += `%0A💰 Total: $${$('#total').text()}`;
+
+  const telefono = "5491159614982"; // Número sin espacios ni guiones
+  const url = `https://wa.me/${telefono}?text=${mensaje}`;
+
+  window.open(url, '_blank');
 });
+
 
 cargarProductos();
